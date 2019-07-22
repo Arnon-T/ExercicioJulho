@@ -4,7 +4,7 @@ public class Agencia {
 
 	public	int	numeroAgencia;
 	
-	Agencia(int numeroAgencia){
+	public Agencia(int numeroAgencia){
 		this.numeroAgencia	=	numeroAgencia;
 	}
 	
