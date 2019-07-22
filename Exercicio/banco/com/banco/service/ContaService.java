@@ -9,7 +9,11 @@ abstract public class ContaService {
 	}
 
 	public static void sacaConta(double sacaValor, Conta sacaConta) {
-		sacaConta.saldoConta -= sacaValor;
+		if(sacaConta.saldoConta >= sacaValor) {
+			sacaConta.saldoConta -= sacaValor;
+		} else {
+			System.out.println("Saldo indisponíve para saque.");
+		}	
 	}
 	
 	public static String imprimeExtrato (Conta consultaConta){
@@ -21,4 +25,15 @@ abstract public class ContaService {
 		String saldoDisponivel = "Saldo disponível da Conta " + consultaConta.numeroConta + ": R$" + (consultaConta.limiteConta + consultaConta.saldoConta) + ".\n";
 		return saldoDisponivel;
 	}
+	
+	public static void transfereValor(Conta origem, Conta destino, double valor) {
+		if (origem.saldoConta >= valor) {
+			origem.saldoConta 	-= valor;
+			destino.saldoConta 	+= valor;
+		}else {
+			System.out.println("Saldo insuficiênte.");
+		}			
+	}
+	
+	
 }

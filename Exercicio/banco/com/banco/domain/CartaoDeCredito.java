@@ -13,6 +13,10 @@ public class CartaoDeCredito {
 	public	String 	validadeCC;
 	public	Cliente clienteCC;
 	
+	/*
+	 * Testes propostos nos exercícios 32-34 contemplados pela construção inicial da classe.
+	 */
+	
 	CartaoDeCredito(int numeroCC, String validadeCC, Cliente clienteCC){
 		
 		this.clienteCC	= clienteCC;

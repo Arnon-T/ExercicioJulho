@@ -8,8 +8,8 @@ public class Funcionario {
 	public Funcionario(String nomeFuncionario, double salarioFuncionario){
 		
 		this.nomeFuncionario	=	nomeFuncionario;
-		this.salarioFuncionario	=	salarioFuncionario;
-		
+		//this.salarioFuncionario	=	salarioFuncionario;
+		this.salarioFuncionario	=	1000.00;
 	}
 	
 }

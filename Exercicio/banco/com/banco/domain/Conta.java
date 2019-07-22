@@ -7,6 +7,9 @@ public class Conta {
 	public double	limiteConta;
 	public Agencia	agenciaConta;
 
+	/*
+	 * Testes propostos nos exercícios 35-37 contemplados pela construção inicial da classe.
+	 */
 
 	public Conta(int numeroConta, double saldoConta, Agencia agenciaConta){
 		this.numeroConta	= numeroConta;
@@ -14,5 +17,4 @@ public class Conta {
 		this.limiteConta	= 100.00;					// Alteração com base na questão 10.
 		this.agenciaConta	= agenciaConta;
 	}
-	
 }
