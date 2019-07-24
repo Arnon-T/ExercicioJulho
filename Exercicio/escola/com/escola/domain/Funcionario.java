@@ -9,8 +9,31 @@ public class Funcionario {
 	public Funcionario() {}
 	
 	public Funcionario(String nomeFuncionario, double refeicaoFuncionario){
-		this.nomeFuncionario	=	nomeFuncionario;
-		this.refeicaoFuncionario = refeicaoFuncionario;
-	}	
+		this.nomeFuncionario		= nomeFuncionario;
+		this.refeicaoFuncionario 	= refeicaoFuncionario;
+	}
+
+	public String pegaNomeFuncionario() {
+		return this.nomeFuncionario;
+	}
 	
+	public void indicaNomeFuncionario(String novoNome) {
+		this.nomeFuncionario = novoNome;
+	}
+	
+	public double pegaSalarioFuncionario() {
+		return this.salarioFuncionario;
+	}
+	
+	public void indicaSalarioFuncionario(double novoSalario) {
+		this.salarioFuncionario = novoSalario;
+	}
+
+	public double pegaRefeicaoFuncionario() {
+		return this.refeicaoFuncionario;
+	}
+	
+	public void indicaRefeicaoFuncionario(double novoVR) {
+		this.refeicaoFuncionario = novoVR;
+	}	
 }
