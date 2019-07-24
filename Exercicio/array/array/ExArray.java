@@ -30,9 +30,7 @@ public class ExArray {
 		
 		int maiorNumero = numeros[numeros.length - 1];
 		System.out.printf("Maior número: %d.\n", maiorNumero);
-		
-		
-		
+					
 	}
 
 }

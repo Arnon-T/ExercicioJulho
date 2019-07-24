@@ -14,6 +14,10 @@ abstract public class FuncionarioService {
 				
 	}
 	
+	public static void reajusteRefeicao(Funcionario func) {
+		double taxa = 1.1;
+		func.refeicaoFuncionario *= taxa;		
+	}
 	
 	
 }

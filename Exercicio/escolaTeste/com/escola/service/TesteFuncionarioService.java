@@ -8,7 +8,7 @@ public class TesteFuncionarioService {
 		// TODO Auto-generated method stub
 
 		//Funcionario funcionarioTeste = new Funcionario("Funcionário Teste", 947.00);
-		Funcionario funcionarioTeste = new Funcionario("Funcionário Teste");
+		Funcionario funcionarioTeste = new Funcionario("Funcionário Teste", 400.00);
 		
 		
 		System.out.println(FuncionarioService.consultaFunc(funcionarioTeste));
@@ -17,6 +17,9 @@ public class TesteFuncionarioService {
 		
 		System.out.println(FuncionarioService.consultaFunc(funcionarioTeste));
 		
+		System.out.printf("Vale Refeição: %f.\n", funcionarioTeste.refeicaoFuncionario);
+		FuncionarioService.reajusteRefeicao(funcionarioTeste);
+		System.out.printf("Vale Refeição: %f.\n", funcionarioTeste.refeicaoFuncionario);
 		
 	}
 

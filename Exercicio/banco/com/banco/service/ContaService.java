@@ -35,5 +35,10 @@ abstract public class ContaService {
 		}			
 	}
 	
+	public static int zeraContador() {
+		int antigoContador = Conta.contador;
+		Conta.contador = 0;
+		return antigoContador;
+	}
 	
 }
