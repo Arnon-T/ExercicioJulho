@@ -9,9 +9,10 @@ package com.banco.domain;
  */
 
 public class CartaoDeCredito {
-	public	int 	numeroCC;
-	public	String 	validadeCC;
-	public	Cliente clienteCC;
+	
+	private int 	numeroCC;
+	private String 	validadeCC;
+	private Cliente clienteCC;
 	
 	/*
 	 * Testes propostos nos exercícios 32-34 contemplados pela construção inicial da classe.
@@ -24,4 +25,29 @@ public class CartaoDeCredito {
 		this.validadeCC = validadeCC;
 		
 	}
+
+	public int getNumeroCC() {
+		return numeroCC;
+	}
+
+	public void setNumeroCC(int numeroCC) {
+		this.numeroCC = numeroCC;
+	}
+
+	public String getValidadeCC() {
+		return validadeCC;
+	}
+
+	public void setValidadeCC(String validadeCC) {
+		this.validadeCC = validadeCC;
+	}
+
+	public Cliente getClienteCC() {
+		return clienteCC;
+	}
+
+	public void setClienteCC(Cliente clienteCC) {
+		this.clienteCC = clienteCC;
+	}	
+	
 }

@@ -13,27 +13,27 @@ public class Funcionario {
 		this.refeicaoFuncionario 	= refeicaoFuncionario;
 	}
 
-	public String pegaNomeFuncionario() {
-		return this.nomeFuncionario;
-	}
-	
-	public void indicaNomeFuncionario(String novoNome) {
-		this.nomeFuncionario = novoNome;
-	}
-	
-	public double pegaSalarioFuncionario() {
-		return this.salarioFuncionario;
-	}
-	
-	public void indicaSalarioFuncionario(double novoSalario) {
-		this.salarioFuncionario = novoSalario;
+	public String getNomeFuncionario() {
+		return nomeFuncionario;
 	}
 
-	public double pegaRefeicaoFuncionario() {
-		return this.refeicaoFuncionario;
+	public void setNomeFuncionario(String nomeFuncionario) {
+		this.nomeFuncionario = nomeFuncionario;
 	}
-	
-	public void indicaRefeicaoFuncionario(double novoVR) {
-		this.refeicaoFuncionario = novoVR;
-	}	
+
+	public double getSalarioFuncionario() {
+		return salarioFuncionario;
+	}
+
+	public void setSalarioFuncionario(double salarioFuncionario) {
+		this.salarioFuncionario = salarioFuncionario;
+	}
+
+	public double getRefeicaoFuncionario() {
+		return refeicaoFuncionario;
+	}
+
+	public void setRefeicaoFuncionario(double refeicaoFuncionario) {
+		this.refeicaoFuncionario = refeicaoFuncionario;
+	}		
 }

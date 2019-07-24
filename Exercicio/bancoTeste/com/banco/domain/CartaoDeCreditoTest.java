@@ -10,8 +10,8 @@ public class CartaoDeCreditoTest {
 		CartaoDeCredito cartao01 = new CartaoDeCredito(11111111, "31/01/2020", cliente01);
 		CartaoDeCredito cartao02 = new CartaoDeCredito(22222222, "29/02/2020", cliente02);
 		
-		System.out.printf("Cartão número: %d, validade %s. Cliente: %s. No Cliente: %d.\n", cartao01.numeroCC, cartao01.validadeCC, cartao01.clienteCC.nomeCliente, cartao01.clienteCC.codigoCliente);
-		System.out.printf("Cartão número: %d, validade %s. Cliente: %s. No Cliente: %d.\n", cartao02.numeroCC, cartao02.validadeCC, cartao02.clienteCC.nomeCliente, cartao02.clienteCC.codigoCliente);
+		System.out.printf("Cartão número: %d, validade %s. Cliente: %s. No Cliente: %d.\n", cartao01.getNumeroCC(), cartao01.getValidadeCC(), cartao01.getClienteCC().getNomeCliente(), cartao01.getClienteCC().getCodigoCliente());
+		System.out.printf("Cartão número: %d, validade %s. Cliente: %s. No Cliente: %d.\n", cartao02.getNumeroCC(), cartao02.getValidadeCC(), cartao02.getClienteCC().getNomeCliente(), cartao02.getClienteCC().getCodigoCliente());
 		
 	}
 

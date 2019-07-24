@@ -19,8 +19,8 @@ public class ClienteTest {
 	Cliente cliente01 = new Cliente("ClienteTeste01", 1);
 	Cliente cliente02 = new Cliente("ClienteTeste02", 2);
 	
-	System.out.printf("Cliente %s, código: %d.\n", cliente01.nomeCliente , cliente01.codigoCliente);
-	System.out.printf("Cliente %s, código: %d.\n", cliente02.nomeCliente , cliente02.codigoCliente);
+	System.out.printf("Cliente %s, código: %d.\n", cliente01.getNomeCliente() , cliente01.getCodigoCliente());
+	System.out.printf("Cliente %s, código: %d.\n", cliente02.getNomeCliente() , cliente02.getCodigoCliente());
 	
 	}	
 }

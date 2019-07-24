@@ -13,15 +13,15 @@ public class ContaServiceTest {
 	Conta conta01 = new Conta(11, 1000.00, ag01);
 	Conta conta02 = new Conta(22, 2000.00, ag02);
 	
-	System.out.printf("INICIAL:        Saldo: R$%f.\n", conta01.saldoConta);
+	System.out.printf("INICIAL:        Saldo: R$%f.\n", conta01.getSaldoConta());
 	
 	ContaService.depositaConta(100.00, conta01);
 	
-	System.out.printf("TESTE DEPOSITO: Saldo: R$%f.\n", conta01.saldoConta);
+	System.out.printf("TESTE DEPOSITO: Saldo: R$%f.\n", conta01.getSaldoConta());
 	
 	ContaService.sacaConta(200.00, conta01);
 	
-	System.out.printf("TESTE SAQUE:    Saldo: R$%f.\n\n", conta01.saldoConta);
+	System.out.printf("TESTE SAQUE:    Saldo: R$%f.\n\n", conta01.getSaldoConta());
 
 	System.out.println(ContaService.imprimeExtrato(conta01));
 	

@@ -2,12 +2,12 @@ package com.banco.domain;
 
 public class Conta {
 	
-	public 			int			numeroConta;
-	public 			double		saldoConta;
-	public 			double		limiteConta;
-	public 			Agencia		agenciaConta;
-	public static	int			contador;
-	public			int			numUnicoConta;
+	private int			numeroConta;
+	private double		saldoConta;
+	private double		limiteConta;
+	private Agencia		agenciaConta;
+	private static	int	contador;
+	private int			numUnicoConta;
 
 	/*
 	 * Testes propostos nos exercícios 35-37 contemplados pela construção inicial da classe.
@@ -21,4 +21,53 @@ public class Conta {
 		contador++;
 		this.numUnicoConta	= Math.round((contador * Math.round(Math.random() * 1000000))) % 10000;
 	}
+
+	public int getNumeroConta() {
+		return numeroConta;
+	}
+
+	public void setNumeroConta(int numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+
+	public double getSaldoConta() {
+		return saldoConta;
+	}
+
+	public void setSaldoConta(double saldoConta) {
+		this.saldoConta = saldoConta;
+	}
+
+	public double getLimiteConta() {
+		return limiteConta;
+	}
+
+	public void setLimiteConta(double limiteConta) {
+		this.limiteConta = limiteConta;
+	}
+
+	public Agencia getAgenciaConta() {
+		return agenciaConta;
+	}
+
+	public void setAgenciaConta(Agencia agenciaConta) {
+		this.agenciaConta = agenciaConta;
+	}
+
+	public int getNumUnicoConta() {
+		return numUnicoConta;
+	}
+
+	public void setNumUnicoConta(int numUnicoConta) {
+		this.numUnicoConta = numUnicoConta;
+	}
+
+	public static int getContador() {
+		return contador;
+	}
+
+	public static void setContador(int contador) {
+		Conta.contador = contador;
+	}
+	
 }
