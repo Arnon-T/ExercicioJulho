@@ -2,18 +2,29 @@ package com.banco.service;
 
 import com.banco.domain.Gerente;
 
-abstract public class GerenteService {
+public class GerenteService extends FuncionarioService{
 
-	public static void aumentoPadraoGerente(Gerente gerente) {
-		gerente.setSalarioGerente(gerente.getSalarioGerente() * 1.1);
+	public static double calculaBonificacao(Gerente gerente){
+		return gerente.getSalarioFunc() * 0.25;
 	}
 	
-	public static void aumentoVariavelGerente(double taxa, Gerente gerente) {
-		gerente.setSalarioGerente(gerente.getSalarioGerente() * taxa);
+	public static void mostraDados(Gerente func) {
+		System.out.printf("Nome: %s. Salário: R$%f. Bonificação: R$%f.\n", func.getNomeFunc(), func.getSalarioFunc(), calculaBonificacao(func));
 	}
 	
-	public static String consultaGerente (Gerente gerente) {
-		String resultConsulta = "Gerente: " + gerente.getNomeGerente() + ". Salário: R$" + gerente.getSalarioGerente() + ".\n";
-		return resultConsulta;
-	}
+/*
+ *  Código comentado após alterações da questão 68.
+ */
+//	public static void aumentoPadraoGerente(Gerente gerente) {
+//		gerente.setSalarioFunc(gerente.getSalarioFunc() * 1.1);
+//	}
+//	
+//	public static void aumentoVariavelGerente(double taxa, Gerente gerente) {
+//		gerente.setSalarioFunc(gerente.getSalarioFunc() * taxa);
+//	}
+//	
+//	public static String consultaGerente (Gerente gerente) {
+//		String resultConsulta = "Gerente: " + gerente.getNomeFunc() + ". Salário: R$" + gerente.getSalarioFunc() + ".\n";
+//		return resultConsulta;
+//	}
 }
